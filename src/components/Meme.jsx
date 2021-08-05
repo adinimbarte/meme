@@ -34,7 +34,7 @@ const Meme = ({ meme, setMeme }) => {
     }
     return (<div className="meme">
         <img src={meme.url} alt="" />
-        <div>
+        <div className="input-array">
             {[...Array(meme.box_count)].map((_, index) => (<input 
            key={index} type="text" placeholder={`Enter Caption ${index + 1}`} onChange={(e)=>{
                 const newBoxes=form.boxes;
@@ -42,10 +42,11 @@ const Meme = ({ meme, setMeme }) => {
                 setForm({...form,boxes:newBoxes});
             }} />))}
         </div>
-        <div className="">
+        <div className="option">
             <button onClick={generateMeme}>Generate  Meme</button>
-            <button onClick={() => {setMeme(null)}}>Choose Template</button></div>
+            <button onClick={() => {setMeme(null)}}>Choose Template</button>
             <button onClick={ ()=> {saveAs(meme.url, `${meme.name}`)}}>Download Meme</button>
+            </div>
             </div>
             
             )

@@ -1,73 +1,89 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-size:20px;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
 }
-.App{width:100vw;
-    background-color: rgb(0, 0, 0);
-    padding: 2%;
+.App {
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  padding: 5vw;
 }
-.App header{
-    width: fit-content;
-    margin:auto;
-    font-size: xx-large;
-    color: aliceblue;
-    border: solid 2px wheat;
-    text-align: center;
-    padding: 1.5%;
-    border-radius:20px;
-    margin-bottom: 40px;
-
+header {
+  width: fit-content;
+  margin: auto;
+  font-size: 2rem;
+  color: aliceblue;
+  border: solid 2px wheat;
+  text-align: center;
+  padding: 1.5%;
+  border-radius: 2rem;
+  margin-bottom: 4rem;
 }
-.template{
-    width:25%;
-    display: inline-block;
-    height: 50%;
-    border:10px solid transparent;
-    padding: 4px;
+.template {
+  width:40vw;
+  display: inline-block;
+  border: 1rem solid transparent;
+  padding: 0.4rem;
 }
-.template .image{
-    width:100%;
-    height:25vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 2%;
+.template .template-title {
+  color: aliceblue;
+  border: solid 0.2rem white;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  font-size: 2vh;
+  margin: auto;
+  height: fit-content;
+  text-align: center;
 }
-.template .image:hover{
-    background-color: rgba(54, 54, 54, 0.932);
+.template .image {
+  
+  height: 25vh;
+  max-height: fit-content;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2%;
 }
-.meme{
-    text-align: center;
-    overflow-x: hidden;
-    height: 100vh;
-   }
-.meme img{
-width: auto;
-height:500px;
-border: 1px solid black;
+.template .image:hover {
+  background-color: rgba(175, 174, 174, 0.712);
 }
-.meme input{
-    margin:10px;
-    padding:5px;
-    width: auto;
-    height: 60px;
-    border: solid ;
-    border-radius: 20px 20px;
+.meme {
+  text-align: center;
+  
+  height: 100vh;
 }
-button{
-min-width: 15%;
-  justify-content: space-evenly;
-  align-items: center;
-  width: auto;
-  height: 60px;
-  margin: 10px;
+.meme img {
+  max-height: 60%;
+  max-width:80%;
+  border: 1px solid black;
+}
+.input-array {
+  margin-top: 1rem;
+}
+.meme input {
+  margin: 1rem;
+  padding: 1rem;
+  height: 4rem;
+  border: solid;
+  width: min-content;
   border-radius: 2rem;
 }
-button:hover{
-    background-color: black;
-    color: rgb(255, 255, 255);
-    
+.option {
+  display:flex;
+  margin:5% ;
+}
+button {
+  width: 20vw;
+  height: 5vh;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-left:4rem;
+  border-radius: 2rem;
+  
+}
+button:hover {
+  background-color: black;
+  color: rgb(255, 255, 255);
 }
