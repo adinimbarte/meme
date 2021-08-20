@@ -17,6 +17,9 @@ function App() {
     <div className="App">
       <header>Meme Generator</header>
       {meme === null ? <Templates templates={templates} setMeme={setMeme} /> : <Meme meme={meme} setMeme={setMeme}/>}
+      <footer>
+	<p>Copyright &copy; 2021 @di</p>
+</footer>
     </div>
   );
 }

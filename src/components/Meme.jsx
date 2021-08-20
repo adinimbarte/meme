@@ -33,7 +33,7 @@ const Meme = ({ meme, setMeme }) => {
         
     }
     return (<div className="meme">
-        <img src={meme.url} alt="" />
+        <img src={meme.url} alt=""  />
         <div className="input-array">
             {[...Array(meme.box_count)].map((_, index) => (<input 
            key={index} type="text" placeholder={`Enter Caption ${index + 1}`} onChange={(e)=>{
